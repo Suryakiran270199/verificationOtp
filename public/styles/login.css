@@ -1,0 +1,48 @@
+.main-layout{
+    margin-top: 100px;
+}
+.side-data{
+    align-items: center;
+}
+.side-img{
+    width:100% ;
+}
+.logo{
+   margin-left:220px ;
+   margin-top: 40px;
+}
+.layout{
+    border: 2px groove gray;
+    width: 70%;
+    margin-left: 15%;
+    border: none;
+    background-color:#f2ebe5;
+}
+/* OTP LAYOUT */
+.otp-layout{
+    margin-top: 180px;
+    margin-left: 120px;
+}
+#input-field{
+    margin-right: 20px;
+    color: orange;
+    background-color: white;
+    box-shadow: whitesmoke;
+}
+.btn-grp{
+    margin-top: 40px;
+}
+
+.button{
+    padding: 6px;
+    border-radius: 5px;
+    width: 340px;
+    color:white;
+   background-color: orange;
+   border: none;
+   border-radius: 5px;
+}
+.resend-otp{
+    margin-top: 20px;
+    margin-left: 100px;
+}
