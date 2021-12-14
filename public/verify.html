@@ -31,15 +31,15 @@
                         <div class="otp-layout">
                             <h4>Enter OTP</h4>
                             <div>
-                                <form action="./Login.html">
+                                <form action=" " >
                                     <div class="d-flex flex-row mt-5">
-                                        <input type="text" style="width: 40px;" id="input-field" class="form-control"
-                                            autofocus="">
-                                        <input type="text" style="width: 40px;" id="input-field" class="form-control" required>
-                                        <input type="text" style="width: 40px;" id="input-field" class="form-control" required>
-                                        <input type="text" style="width: 40px;" id="input-field" class="form-control" required>
-                                        <input type="text" style="width: 40px;" id="input-field" class="form-control" required>
-                                        <input type="text" style="width: 40px;" id="input-field" class="form-control" required>
+                                        <!-- <input type="text" oninput="otpHandler()" style="width: 40px;"  id="input-field" class="form-control" autofocus=""> -->
+                                        <input type="text" oninput="v11()" maxlength="1" style="width: 40px;"  id="v1" value="" class="form-control" autofocus>
+                                        <input type="text" oninput="v22()" maxlength="1" style="width: 40px;"  id="v2" value="" class="form-control">
+                                        <input type="text" oninput="v33()" maxlength="1" style="width: 40px;"  id="v3" value="" class="form-control">
+                                        <input type="text" oninput="v44()" maxlength="1" style="width: 40px;"  id="v4" value="" class="form-control">
+                                        <input type="text" oninput="v55()" maxlength="1" style="width: 40px;"  id="v5" value="" class="form-control">
+                                        <input type="text" oninput="v66()" maxlength="1" style="width: 40px;"  id="v6" value="" class="form-control">
                                     </div>
                                     <div class="btn-grp">
                                         <input type="submit" class="button" value="Confirm OTP">
@@ -56,5 +56,70 @@
         </div>
     </div>
 </body>
-
 </html>
+
+<script>
+    function v11(){
+        var data = document.getElementById("v1").value;
+        if(data.length == 1){
+            // document.getElementById("v1").value =data[0];
+            document.getElementById("v2").focus();
+        }
+    }
+
+    function v22(){
+        var data = document.getElementById("v2").value;
+        if(data.length == 0){
+            // document.getElementById("v2").value ='';
+            document.getElementById("v1").focus();
+        }
+
+        if(data.length == 1){
+            // document.getElementById("v2").value =data[0];
+            document.getElementById("v3").focus();
+        }
+    }
+    function v33(){
+        var data = document.getElementById("v3").value;
+        if(data.length == 0){
+            // document.getElementById("v3").value ='';
+            document.getElementById("v2").focus();
+        }
+        if(data.length == 1){
+            // document.getElementById("v3").value =data[0];
+            document.getElementById("v4").focus();
+        }
+    }
+    function v44(){
+        var data = document.getElementById("v4").value;
+        if(data.length == 0){
+            document.getElementById("v4").value ='';
+            document.getElementById("v3").focus();
+        }
+        if(data.length == 1){
+            document.getElementById("v4").value =data[0];
+            document.getElementById("v5").focus();
+        }
+    }
+    function v55(){
+        var data = document.getElementById("v5").value;
+        if(data.length == 0){
+            document.getElementById("v5").value ='';
+            document.getElementById("v4").focus();
+        }
+        if(data.length == 1){
+            document.getElementById("v5").value =data[0];
+            document.getElementById("v6").focus();
+        }
+    }
+    function v66(){
+        var data = document.getElementById("v6").value;
+        if(data.length == 0){
+            document.getElementById("v6").value ='';
+            document.getElementById("v5").focus();
+        }
+        if(data.length == 1){
+            document.getElementById("v6").value =data[0];
+        }
+    }
+</script>

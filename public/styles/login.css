@@ -23,12 +23,10 @@
     margin-top: 180px;
     margin-left: 120px;
 }
-#input-field{
+.form-control{
     margin-right: 20px;
-    color: orange;
-    background-color: white;
-    box-shadow: whitesmoke;
 }
+
 .btn-grp{
     margin-top: 40px;
 }
